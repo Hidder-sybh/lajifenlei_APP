@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/fragement_exam"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgx"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/toolbar"
+            app:titleTextColor="#fff"
+            android:visibility="gone"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/main2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="测试中"
+
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="7"
+        android:background="@drawable/roundborder"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="6dp"
+                android:layout_height="23sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/headroundborder" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="monospace"
+                android:gravity="bottom"
+                android:padding="2sp"
+                android:text=" 单选题"
+                android:layout_marginLeft="3dp"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/numx"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_toLeftOf="@+id/a"
+                android:fontFamily="monospace"
+                android:gravity="bottom|end"
+                android:text=" 1"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:fontFamily="monospace"
+                android:gravity="bottom"
+                android:text=" /10"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/qs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/questionborder"
+            android:lines="3"
+            android:padding="5sp"
+            android:text="\n\u3000\u3000你是什么垃圾"
+            android:textSize="19sp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/A"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
+                android:gravity="left|center_vertical"
+                android:text="\u3000A.\u3000干垃圾"
+                android:textSize="18sp" >
+
+            </Button>
+
+            <Button
+                android:id="@+id/B"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
+                android:gravity="left|center_vertical"
+                android:text="\u3000B.\u3000干垃圾"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/C"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
+                android:gravity="left|center_vertical"
+                android:text="\u3000A.\u3000干垃圾"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/D"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
+                android:gravity="left|center_vertical"
+                android:text="\u3000B.\u3000干垃圾"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:layout_margin="20dp"
+            android:id="@+id/feedback"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <top.androidman.SuperButton
+            android:id="@+id/submit"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:visibility="invisible"
+            app:border_color="@color/deepskyblue"
+            app:border_width="0.9dp"
+            app:color_normal="@color/color_accent"
+            app:corner="10dp"
+            app:text="\u3000下一题\u3000"
+            app:textColor="@color/color_white"
+            app:textSize="18sp" />
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_point"
+            android:icon="@drawable/nav_point"
+            android:title="我的积分"/>
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/nav_task"
+            android:title="设置"/>
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/nav_share"
+            android:title="分享应用"/>
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@drawable/nav_call"
+            android:title="客服中心"/>
+        <item
+            android:id="@+id/nav_renew"
+            android:icon="@drawable/nav_renew"
+            android:title="检测更新"/>
+
+
+
+    </group>
+</menu>

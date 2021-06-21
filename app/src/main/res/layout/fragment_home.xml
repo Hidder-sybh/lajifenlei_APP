@@ -1,0 +1,168 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/toolbar"
+        app:titleTextColor="#fff"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/openssl"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/menu"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:visibility="gone"/>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_iamge_view"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/dt"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="-10dp"
+        android:orientation="horizontal"
+        android:id="@+id/t1"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/searchborder"
+            android:layout_height="50dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/sc"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:src="@drawable/search" />
+            <TextView
+                android:id="@+id/search_view"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:maxHeight="300dp"
+                android:layout_height="50dp"
+                android:dropDownHeight="300dp"
+                android:layout_gravity="center|center_vertical"
+                android:gravity="center_vertical"
+                android:hint="请输入正确的物品名称"
+                android:background="@null"
+                android:singleLine="true"
+                android:layout_marginLeft="30dp"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/voiStart"
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/voi" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgStaet"
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/img" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/trush"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/table_frame"
+            android:scrollbarSize="10dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#4CAF50"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="--------垃圾分类--------"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/gs"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gs" />
+
+            <ImageView
+                android:id="@+id/gg"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gg" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/ge"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ge" />
+
+            <ImageView
+                android:id="@+id/gc"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gc" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

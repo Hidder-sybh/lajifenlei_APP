@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/sz"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:background="@drawable/sz"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sz"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <top.androidman.SuperButton
+            android:id="@+id/examStart"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            app:color_normal="@color/trans"
+            app:drawable_middle_height="160dp"
+            app:drawable_middle_width="160dp"
+            app:shape="CIRCLE"
+            android:gravity="center_horizontal"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+</RelativeLayout>

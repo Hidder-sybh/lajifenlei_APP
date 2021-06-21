@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/toolbar"
+            app:titleTextColor="#fff"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/main2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="做题记录"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="1"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="2"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="3"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp">
+
+        </TextView>
+        <TextView
+        android:id="@+id/tv4"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:text="4"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="25sp">
+
+    </TextView>
+        <TextView
+        android:id="@+id/tv5"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:text="5"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="25sp">
+
+    </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="6"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textSize="25sp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="7"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="8"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="9"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="10"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp">
+
+        </TextView>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/totalcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="总分为:"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
+    <top.androidman.SuperButton
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        app:color_normal="@color/color_accent"
+        app:corner="10dp"
+        app:text="回到主页"
+        app:textColor="@color/color_white"
+        app:textSize="22sp" />
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/qa"
+    android:background="@drawable/roundborder"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="23sp"
+            android:gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/headroundborder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:padding="2sp"
+            android:text=" 错题："
+            android:layout_marginLeft="3dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/q"
+            android:text="这是一堆问题xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            android:layout_marginLeft="3dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="monospace"
+            android:gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="23sp"
+            android:gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="3dp"
+            android:background="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="monospace"
+            android:gravity="bottom"
+            android:padding="2sp"
+            android:text=" 答案："
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/a"
+            android:text="这是答案"
+            android:layout_marginLeft="3dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="monospace"
+            android:gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

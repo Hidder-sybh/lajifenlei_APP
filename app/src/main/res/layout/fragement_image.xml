@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:background="@drawable/imgbg"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/vehicle"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/ivFront"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            style="@style/PhotoView"
+            android:scaleType="fitXY"
+            android:background="@drawable/roundborder"
+            android:src="@drawable/se" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_weight="1"
+            android:id="@+id/lv1"
+            android:background="@drawable/leftborder"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/licenseChooseButton"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_marginLeft="30dp"
+
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:textSize="20sp"
+                android:textColor="#C1C2C1C1"
+                android:background="@null"
+                android:drawableLeft="@drawable/choosephoto1"
+                android:text="相册" />
+            <Button
+                android:id="@+id/frontButton"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="4"
+                android:background="@null"
+                android:textSize="20sp"
+                android:textColor="#C1C2C1C1"
+                android:drawableLeft="@drawable/takephoto1"
+                android:text="拍照" />
+
+        </LinearLayout>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <top.androidman.SuperButton
+        android:id="@+id/upload"
+        android:layout_width="260dp"
+        android:layout_gravity="center"
+        android:layout_height="40dp"
+        android:layout_margin="40dp"
+        app:color_normal="@color/red"
+        app:color_pressed="@color/color_ffB419"
+        app:corner="10dp"
+        app:text="上传"
+        app:textColor="@color/color_white"
+        app:textSize="18sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        />
+    </LinearLayout>
+</LinearLayout>

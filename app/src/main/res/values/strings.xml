@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TrashSorter</string>
+    <string name="title_home">指南</string>
+    <string name="title_search">查询</string>
+    <string name="title_dashboard">测试</string>
+    <string name="title_notifications">专题</string>
+    <string name="voice">语音识别</string>
+    <string name="image">图像识别</string>
+    <string name="input">输入关键词</string>
+    <string name="inputCanID">请输入垃圾桶编号</string>
+    <string name="IDResearch">获取该垃圾桶工作信息</string>
+    <string name="CanStatusCheck">获取该垃圾桶工作状态</string>
+    <string name="getAllRecords">获取所有垃圾的统计信息</string>
+    <string name="gs"><![CDATA[ <b><font>湿垃圾</font></b> 是指易腐的生物质废弃物。包括剩菜剩饭、瓜皮果核、花卉绿植、肉类碎骨、过期食品、餐厨垃圾等。<br/><b><font>投放要求：</font></b>
+                        <br/> <b><font>1.</font></b>纯流质食物垃圾，如牛奶等，应直接倒进下水口<br/> <b><font>2.</font></b>有包装物的湿垃圾应将包装物取出后分类投放，包装物请投放到相应的可回收物容器或干垃圾容器
+                                                <br/><b><font>常见物品：</font></b>]]></string>
+    <string name="gg"><![CDATA[ <b><font>干垃圾</font></b> 是指出有害垃圾、可回收物、湿垃圾意外的其他生活废弃物<br/><b><font>投放要求：</font></b>
+                        <br/> <b><font>1.</font></b>尽量沥干水分<br/> <b><font>2.</font></b>难以辨识类别的生活垃圾投入干垃圾容器内
+                        <br/><b><font>常见物品：</font></b>]]></string>
+    <string name="ge"><![CDATA[ <b><font>干垃圾</font></b> 是指出有害垃圾、可回收物、湿垃圾意外的其他生活废弃物<br/><b><font>投放要求：</font></b>
+                        <br/> <b><font>1.</font></b>尽量沥干水分<br/> <b><font>2.</font></b>难以辨识类别的生活垃圾投入干垃圾容器内
+                                                <br/><b><font>常见物品：</font></b>]]></string>
+    <string name="gc"><![CDATA[ <b><font>可回收物</font></b> 是指适宜回收和可循环再利用的废弃物。主要包括废玻璃、废金属、废塑料、废纸张、废织物等<br/><b><font>投放要求：</font></b>
+                        <br/> <b><font>1.</font></b>轻投轻放<br/> <b><font>2.</font></b>清洁干燥、避免污染<br/> <b><font>3.</font></b>立体包装请清空内容物，清洁后压扁投放<br/> <b><font>4.</font></b>有尖锐边角的，应包裹后投放
+                                                <br/><b><font>常见物品：</font></b>]]></string>
+
+    <string name="fir">首页</string>
+</resources>

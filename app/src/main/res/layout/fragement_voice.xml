@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/mainvoice"
+    android:background="@drawable/xxs"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <AutoCompleteTextView
+                android:id="@+id/midSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dropDownHeight="300dp"
+                android:visibility="invisible"
+                android:gravity="center_vertical"
+                android:layout_gravity="top|center_horizontal"
+                android:paddingLeft="10dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight= "20dp"
+
+                android:background="@drawable/searchborder"
+                android:maxHeight="200dp"
+                android:drawableLeft="@drawable/icon_search"
+                android:hint="\t请开始语音输入"
+                android:singleLine="true"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/trush"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_frame"
+                    android:scrollbarSize="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    />
+                <top.androidman.SuperButton
+                    android:id="@+id/voiceStart"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    app:color_normal="@color/color_accent"
+                    app:drawable_middle="@drawable/voiceinput"
+                    android:layout_gravity="center"
+                    app:drawable_middle_height="240dp"
+                    app:drawable_middle_width="240dp"
+                    app:shape="CIRCLE" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <top.androidman.SuperButton
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            app:color_normal="@color/color_accent"
+            app:corner="10dp"
+            app:text="确认搜索"
+            app:textColor="@color/color_white"
+            android:visibility="gone"
+            app:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+</LinearLayout>
